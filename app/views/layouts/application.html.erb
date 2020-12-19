@@ -9,9 +9,11 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= render 'layouts/_flash_tasks' %>
+   <body>
+    <div class="container">
+      <%= render 'layouts/flash_tasks' %>
 
-    <%= yield %>
+      <%= yield %>
+    </div>
   </body>
 </html>
